@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+}
+
+.home-panel {
+    background-color: rgba(9, 1, 57, 0.893);
+    padding: 8px 25px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.home-panel p {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+nav {
+    background-color: rgba(1,1,10, 0.9);
+    padding: 20px 10px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: start;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-align: left;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+ul li a:hover {
+    background-color: rgba(3,3,30, 0.9);
+    cursor: pointer;
+    transform: scale(1.2);  
+}
+
+footer p{
+    text-align: center;
+    margin: 50vh;
+}
+
+.text {
+    margin-left: 20px;
+    display: block;
+    border-left: solid;
+    border-width: 4px;
+    border-color: rgba(9, 1, 77, 0.893);
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
