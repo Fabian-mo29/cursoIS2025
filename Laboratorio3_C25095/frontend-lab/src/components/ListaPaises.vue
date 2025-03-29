@@ -17,7 +17,7 @@
                     <td>{{ pais.Idioma }}</td>
                     <td>
                         <button class="btn btn-secondary btn-sm">Editar</button>
-                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                        <button v-on:click="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
                     </td>
                 </tr>
             </tbody>
@@ -40,6 +40,11 @@ export default {
                 { nombre: "Alemania", continente: "Europa", Idioma: "Alemán" },
             ],
         };
+    },
+    methods: {
+        eliminar: function(index) {
+            this.paises.splice(index, 1);
+        },
     },
 };
 </script>
