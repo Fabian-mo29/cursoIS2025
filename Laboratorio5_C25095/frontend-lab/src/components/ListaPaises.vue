@@ -28,7 +28,7 @@
           <td>{{ pais.Idioma }}</td>
           <td>
             <button class="btn btn-secondary btn-sm">Editar</button>
-            <button v-on:click="eliminar" class="btn btn-danger btn-sm">
+            <button v-on:click="eliminar(index)" class="btn btn-danger btn-sm">
               Eliminar
             </button>
           </td>
@@ -44,15 +44,7 @@ export default {
   name: "ListaPaises",
   data() {
     return {
-      paises: [
-        // { nombre: "Costa Rica", continente: "América", Idioma:
-        // "Español" },
-        // { nombre: "Japón", continente: "Asia", Idioma: "Japonés" },
-        // { nombre: "Corea del Sur", continente: "Asia", Idioma:
-        // "Coreano" },
-        // { nombre: "Italia", continente: "Europa", Idioma: "Italiano" },
-        // { nombre: "Alemania", continente: "Europa", Idioma: "Alemán" },
-      ],
+      paises: [],
     };
   },
   methods: {
