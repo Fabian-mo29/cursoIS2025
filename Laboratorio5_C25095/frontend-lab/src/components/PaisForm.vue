@@ -42,7 +42,7 @@
         </div>
         <div>
           <!-- <router-link to="/"> -->
-          <button type="submit" class="btn btn-success btn-block">
+          <button id="submit" type="submit" class="btn btn-success btn-block">
             Guardar
           </button>
           <!-- </router-link> -->
